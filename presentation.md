@@ -39,6 +39,9 @@ In this project I try and answer the following question: which pickup locations 
  * I.e., taking out trips that spanned more than a mile and a half and trips without recorded x and y pickup coordinates, adding three minutes to each trip’s duration, etc.
  
 ### Table
+<img src="../to-walk-or-not-to-walk/files_for_md/pop_data.png" />
+
+
 
 ***Note*** the smaller standard deviations after both paring down and removing the outliers
 
