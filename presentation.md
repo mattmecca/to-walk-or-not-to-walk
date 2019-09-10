@@ -20,12 +20,10 @@ In this project I try and answer the following question: which pickup locations 
 
 # Initial Population Data
 
-### Table
-
 ***Note***: There were outliers that we felt were not representative of the general population (a 1442.73 minute taxi ride, e.g.); we assumed this data was inputted incorrectly and thus chose to remove it outright
 
 
-# Project Population Data
+# Population Data
 
 * We used New York City’s Yellow taxi data from May of 2016
   * I felt that, historically, May is a mild enough month that people will, all other things equal, be indifferent towards walking
@@ -38,10 +36,7 @@ In this project I try and answer the following question: which pickup locations 
 * We take our project’s population data to be the original data collected by Yellow Taxi (or whomever) after applying our project’s conditions to it (and thus not the same as “initial” population data)
   * I.e., taking out trips that spanned more than a mile and a half and trips without recorded x and y pickup coordinates, adding three minutes to each trip’s duration, etc.
  
-### Table
 <img src="/files_for_md/pop_data.png" />
-
-
 
 ***Note*** the smaller standard deviations after both paring down and removing the outliers
 
@@ -59,7 +54,6 @@ In this project I try and answer the following question: which pickup locations 
 
   * This is in line with the basic premise of the Central Limit Theorem, and something that I found to be pretty cool
 
-### Pie chart (slide 10)
 <img src="/files_for_md/pop_pie.png" />
 
 * As you can see to the left, not controlling for time of day, pickup location, etc., walking is quicker than taking a cab roughly 4.85% of the time
@@ -70,7 +64,6 @@ In this project I try and answer the following question: which pickup locations 
 
 * To be able to work with the data –– which spanned over a million observations –– we had to take a random subset of the project population. Our resulting sample dataset consisted of 8% of the project population, or approximately 34,460 observations. 
 
-### Table (slide 11)
 <img src="/files_for_md/samp_data.png" />
 
 ## Exploratory Analysis –– Sample Data
@@ -78,7 +71,6 @@ In this project I try and answer the following question: which pickup locations 
 * Note that, save the number of observations, our Time Difference variable’s distribution and the percentage of time we ought to walk is roughly the same
   * This serves as verification that our random subsampling was indeed random (and thus a success)
 
-### Histogram and pie chart (slide 12)
 <img src="/files_for_md/samp_hist.png" />
 <img src="/files_for_md/samp_pie.png" />
 
@@ -87,7 +79,6 @@ In this project I try and answer the following question: which pickup locations 
 * In order to illustrate the data (in CARTO), we had to pare down our sample dataset even further
   * This meant randomly selecting a subset that was 2.5% of the sample (and thus 0.20% of the project population), or approximately 861 observations.
  
-### Table (slide 13)
 <img src="/files_for_md/CARTO_data.png" />
 
 
@@ -121,6 +112,8 @@ In this project I try and answer the following question: which pickup locations 
 
 # Exploring our Map –– when to walk?
 
+<img src="/files_for_md/carto_map.png" />
+
 * One thing that we get from this CARTO map (other than a headache) is that Yellow Taxi operates  primarily (and almost exclusively) in Manhattan
 
 * Another thing worth mentioning is that it’s during the afternoon (or during rush hour and the evening, to be more specific) when Yellow Taxi is busiest
@@ -142,7 +135,6 @@ In this project I try and answer the following question: which pickup locations 
 
 * Before considering our sample data on a region-by-region basis, we can first use it to further examine the “Generally speaking, walking is most likely to be the quicker option between 4:00 PM and 12:00 AM” observation we had when looking at the previous slides’ maps. To do this, we first examine the time difference histograms for the different morning and Early Afternoon time periods:
 
-### Four histograms for each time of day (slide 20)
 <img src="/files_for_md/12am_4.png" />
 <img src="/files_for_md/4am_8.png" />
 <img src="/files_for_md/8am_12pm.png" />
@@ -150,7 +142,6 @@ In this project I try and answer the following question: which pickup locations 
 
 ### Now we take a look at the time difference histograms for the Rush Hour and Evening time periods:
 
-# Rush hour and evening histograms (slide 21)
 <img src="/files_for_md/4pm_8.png" />
 <img src="/files_for_md/8pm_12am.png" />
 
@@ -169,7 +160,6 @@ In this project I try and answer the following question: which pickup locations 
 
 # What did we find?
 
-# Graph (slide 23)
 <img src="/files_for_md/late_probs.png" />
 
 * First off, if you find yourself leaving Lower Manhattan between the hours of 8:00 PM to 12:00 AM, there is a 14% chance that you will arrive at your destination (assuming our project assumptions are not violated) quicker than you would have had you taken a cab
@@ -182,7 +172,6 @@ In this project I try and answer the following question: which pickup locations 
 
 * Lastly, we ought to also note that Midtown appears to be the most consistently congested region, and thus sets off our walking indicator most often
 
-### Bar chart (slide 25)
 <img src="/files_for_md/sd_bars.png" />
 
 * Here we see that Midtown, on average, is where walking is most likely going to be quicker than taking a cab
