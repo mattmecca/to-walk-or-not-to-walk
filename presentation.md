@@ -38,8 +38,6 @@ In this project I try and answer the following question: which pickup locations 
  
 <img src="/files_for_md/pop_data.png" />
 
-***Note*** the smaller standard deviations after both paring down and removing the outliers
-
 
 ## Exploratory Analysis –– Population Data
 <img src="/files_for_md/pop_hist.png" />
@@ -62,7 +60,7 @@ In this project I try and answer the following question: which pickup locations 
 
 # Sample Data
 
-* To be able to work with the data –– which spanned over a million observations –– we had to take a random subset of the project population. Our resulting sample dataset consisted of 8% of the project population, or approximately 34,460 observations. 
+* To be able to work with the data –– which spanned over ten million observations –– we had to take a random subset of the project population. Our resulting sample dataset consisted of 8% of the project population, or approximately 34,460 observations. 
 
 <img src="/files_for_md/samp_data.png" />
 
